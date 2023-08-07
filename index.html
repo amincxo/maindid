@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شرکت دیدار</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body {
+        
+            font-family: "Bai Jamjuree", Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgba(0, 0, 0, 0.445);
+        }
+        .background {
+            
+        }
+        .video {
+            height: cover;
+            
+            
+        }
+        .filter {
+            height: 100vh;
+           
+            z-index: 100;
+        }
+        .header {
+            display: flex;
+            justify-content: center;
+            padding: 2vh 0;
+        }
+        .container {
+            color: aliceblue;
+            padding: 12vh 2vw;
+            width: 90vw;
+            height: 70vh;
+            font-weight: 900;
+        }
+        .header ul {
+            width: 80vw;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            list-style:none;
+            color: aliceblue;
+            
+        }
+        .video {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index:-1 ;
+        }
+        .ar {
+            display: flex;
+            justify-content: center;
+            padding-top:12vh ;
+            font-size: 20vh;
+        }
+        .bottom {
+            position: absolute;
+            margin: 2vh 0;
+            padding: 2vh 0;
+            bottom: 0;
+            width: 90vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid white;
+            color: rgb(36, 33, 33);
+            background-color: aliceblue;
+            font-weight: bold;
+            border-radius: 20px;
+        }
+        .footer {
+            display: flex; 
+            justify-content: center;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(36, 33, 33);
+            
+        
+        }
+        @media (min-aspect-ratio: 9/16){
+            .video {
+                width: 110%;
+                height: auto;
+            }
+        }
+        
+        @media (max-aspect-ratio: 9/16){
+            .video {
+                width: auto;
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <video class="video" autoplay muted loop>
+            <source src="/video.mp4" type="video/mp4" >
+        </video>
+            <div class="filter" >
+                <header dir="rtl" class="header">
+                    <ul>
+                        <li>صفحه اصلی</li>
+                        <li> شرکت دیدار</li>
+                        <li>درباره شرکت</li>
+                    </ul>
+                </header>
+                <div class="container" dir="rtl" >
+                     تبدیل تلفن همراه به  <br>
+                     <span class="ar">AR </span>
+                </div>
+                <footer class="footer" >
+                    <div class="bottom" >
+                        <a href="https://www.did-ar.ir:3000">
+                        اجرا کردن برنامه  
+                        </a>  
+                    </div>
+                </footer>
+            </div>
+    </div>
+</body>
+</html>
